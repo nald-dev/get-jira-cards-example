@@ -8,6 +8,8 @@ jobs:
         id: get-jira-cards
         uses: nald-dev/get-jira-cards@master
         with:
-          username: ${{ secrets.JIRA_USERNAME }}
-          password: ${{ secrets.JIRA_PASSWORD }}
-          status: done
+          project_name: Purple Apple
+          jira_base_url: ${{ secrets.JIRA_BASE_URL }}
+          jira_username: ${{ secrets.JIRA_USERNAME }}
+          jira_token: ${{ secrets.JIRA_TOKEN }}
+          jira_target_status: done
