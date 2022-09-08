@@ -6,7 +6,7 @@ jobs:
     steps:
       - name: Get JIRA Cards step
         id: get-jira-cards
-        uses: nald-dev/get-jira-cards
+        uses: nald-dev/get-jira-cards@1.0
         with:
           username: ${{ secrets.JIRA_USERNAME }}
           password: ${{ secrets.JIRA_PASSWORD }}
